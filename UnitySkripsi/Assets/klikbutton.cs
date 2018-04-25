@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class menubelajar : MonoBehaviour {
+public class klikbutton : MonoBehaviour {
     public void changemenuscene(string scenename)
     {
         Application.LoadLevel(scenename);
