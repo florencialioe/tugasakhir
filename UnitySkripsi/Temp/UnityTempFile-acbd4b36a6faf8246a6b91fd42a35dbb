@@ -85,7 +85,6 @@
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
 -define:UNITY_HAS_GOOGLEVR
-Assets/buttonrincianhewan.cs
 Assets/klikbutton.cs
 Assets/video.cs
 -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
