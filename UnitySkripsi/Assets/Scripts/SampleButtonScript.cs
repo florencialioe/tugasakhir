@@ -12,6 +12,4 @@ public class SampleButtonScript : MonoBehaviour {
     public Image gambarhewan;
     public GameObject bintang;
 
-
-
 }
