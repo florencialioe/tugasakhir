@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2de5aae5ae71a084f83ff412ba3340df
+timeCreated: 1525091682
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Butterfly Kids
+  fontNames:
+  - Butterfly Kids
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
