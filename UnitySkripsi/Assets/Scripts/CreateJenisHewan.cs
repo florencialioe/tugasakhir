@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 [System.Serializable]
 
-public class item
+public class keterangan
 {
     public string han;
     public string pin;
@@ -15,38 +15,23 @@ public class item
     public bool star;
 }
 
-public class CreateScrollList : MonoBehaviour {
+public class CreateJenisHewan : MonoBehaviour
+{
     public GameObject sampleButton;
     public Transform contentPanel;
-    public List<item> itemList;
-
-    //[SerializeField] ScrollRect scrollRect;
-    //[SerializeField] RectTransform content_Panel;
-    //[SerializeField] Vector2 valueX;
+    public List<keterangan> itemList;
 
     void Start()
     {
         PopulateList();
-       // Snapto(valueX);
     }
 
-    //public void Snapto(Vector2 alue)
-   // {
-   //    Canvas.ForceUpdateCanvases();
-      // content_Panel.anchoredPosition = (Vector2)scrollRect.transform.InverseTransformPoint(alue);
-
-    //}
-
-    //private void Update()
-    //{
-        //Snapto(valueX);
-   // }
     void PopulateList()
     {
         foreach (var item in itemList)
         {
             GameObject newButton = Instantiate(sampleButton) as GameObject;
-            SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
+            buttonjenishewanScript buttonScript = newButton.GetComponent<buttonjenishewanScript>();
             buttonScript.hanzi.text = item.han;
             buttonScript.pinyin.text = item.pin;
             buttonScript.arti.text = item.ar;

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/halamancarihewan.unity
+- path: Assets/halcarihewan.unity
   isLoaded: 1
   isActive: 1
