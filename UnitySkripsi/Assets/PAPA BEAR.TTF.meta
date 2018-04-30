@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 78b3214a09f604f4ea150abebf0e2acd
+timeCreated: 1525085838
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Papa Bear
+  fontNames:
+  - Papa Bear
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
