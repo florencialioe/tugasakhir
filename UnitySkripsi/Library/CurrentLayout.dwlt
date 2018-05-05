@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 45
+  controlID: 68
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 46
+  controlID: 69
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 0
     width: 637
     height: 357
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -482,7 +482,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 6463feff3864feff0865feff0c65feff1065feff1465feff1865feff1c65feff2265feff2665feff2c65feff3465feff3c65feff5067feffc668feffbc6afeffbe6cfeffae71feff7672feff4273feff4673feff4a73feff4e73feff5273feff5673feff5c73feff6073feff6673feff6c73feff7273feff6279feffc07dfeff8c7efeff5c7ffeff607ffeff647ffeff687ffeff6c7ffeff707ffeff767ffeff7a7ffeff807ffeff887ffeff907ffeff8094feffde9bfeffaa9cfeff769dfeff7a9dfeff7e9dfeff829dfeff869dfeff8a9dfeff909dfeff949dfeff9a9dfeffa09dfeffa69dfeff10aafeff88b3feff54b4feff20b5feff24b5feff28b5feff2cb5feff30b5feff34b5feff3ab5feff3eb5feff44b5feff4ab5feff50b5feff96bbfeff52befeff1ebffeffeebffefff2bffefff6bffefffabffefffebffeff02c0feff08c0feff0cc0feff12c0feff1ac0feff22c0feff2ae0feff2ce0feff6ce1feffc2e4feff18e7feff8af7feff0af9feffd6f9feffa2fafeffa6fafeffaafafeffaefafeffb2fafeffb6fafeffbcfafeffc0fafeffc6fafeffccfafeffd2fafeffec03ffff0e07ffffda07ffffa608ffffaa08ffffae08ffffb208ffffb608ffffba08ffffc008ffffc408ffffca08ffffd008ffffd608ffff3413ffff1215ffffde15ffffaa16ffffae16ffffb216ffffb616ffffba16ffffbe16ffffc416ffffc816ffffce16ffffd416ffffda16ffffd61cffffda29ffff622cffff462dffff122effff162effff1a2effff1e2effff222effff262effff2c2effff302effff362effff3c2effff422effffb431ffff6c33ffff3635ffffe041ffffc242ffff9243ffff9643ffff9a43ffff9e43ffffa243ffffa643ffffac43ffffb043ffffb643ffffbe43ffffc643ffffe245ffffc446ffff9047ffff9447ffff9847ffff9c47ffffa047ffffa447ffffaa47ffffae47ffffb447ffffba47ffffc047fffff255ffffde58ffffac59ffff885affff9c5affffb05affffc45affffd85affffec5affff025bffff165bffff2c5bffff425bffff585bffff9669ffff646affff306bffff346bffff386bffff3c6bffff406bffff446bffff4a6bffff4e6bffff546bffff5a6bffff606bffff1471ffff3676ffff0277ffffe077fffff277ffff0478ffff1678ffff2878ffff3a78ffff4e78ffff6078ffff7478ffff8a78ffffa078ffff2496ffff60f2ffff46f5ffff5ef6ffffbaf7ffffe0fbffff00000000f6260000002700000e2800005228000090280000942900003a2c0000843300008e330000f63a0000003b0000e0420000ea4200006a51000074510000e652000024530000085a0000125a0000ac620000b66200008c6a0000966a00006c72000076720000327300009e7300004c74000056740000ae7d0000b87d00008e85000098850000a8850000ac8d0000b68d0000569600006096000094960000f49d0000329e0000709e0000ae9e000092a50000
+    m_ExpandedIDs: 12e7ffffeee7ffffbee8ffffc2e8ffffc6e8ffffcae8ffffcee8ffffd2e8ffffd8e8ffffdce8ffffe0e8ffffe8e8fffff0e8ffffa6ebffff86ecffff42eeffffccf5ffff8cf6ffffcef8ffffacf9ffff7cfaffff80faffff84faffff88faffff8cfaffff90faffff96faffff9afaffffa0faffffa8faffffb0faffffe0fbffff0000000036310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
