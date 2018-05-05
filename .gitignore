@@ -41,3 +41,6 @@ UnitySkripsi/Temp/UnityLockfile
 UnitySkripsi/Temp/UnityTempFile-05382c932bc520a40b3b2ab13c363b05
 UnitySkripsi/Library/metadata/52/52a206b72a8f4f749c28d8b18b42dd19
 UnitySkripsi/Temp/UnityTempFile-8a9e51d939a00674f8a1fcb910480e8a
+*.backup
+UnitySkripsi/Library/CurrentLayout.dwlt
+UnitySkripsi/Library/LastSceneManagerSetup.txt

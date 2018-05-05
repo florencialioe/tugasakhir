@@ -66,8 +66,8 @@ MonoBehaviour:
     y: 0
     width: 320
     height: 334
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 107
+  controlID: 45
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,8 +139,8 @@ MonoBehaviour:
     y: 0
     width: 409
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -324,18 +324,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: G:\Kerjaan\Veter\tugasakhir\UnitySkripsi
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 93}
-    m_SelectedIDs: 28250000
-    m_LastClickedID: 9512
+    m_SelectedIDs: de240000
+    m_LastClickedID: 9438
     m_ExpandedIDs: 00000000de24000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 60}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 115
 --- !u!114 &14
@@ -480,20 +480,20 @@ MonoBehaviour:
     height: 313
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 74260000
     m_LastClickedID: 0
-    m_ExpandedIDs: 78a2fdff4aa3fdff10a4fdff14a4fdff18a4fdff1ca4fdff20a4fdff24a4fdff28a4fdff2ca4fdff32a4fdff36a4fdff3ca4fdff40a4fdff46a4fdff4ca4fdffd6bffdffaac0fdff72c1fdff76c1fdff7ac1fdff7ec1fdff82c1fdff86c1fdff8ac1fdff8ec1fdff94c1fdff98c1fdff9ec1fdffa2c1fdffa8c1fdffaec1fdff44cafeff1acbfeffeecbfeff00ccfeff12ccfeff24ccfeff36ccfeff48ccfeff5accfeff6cccfeff80ccfeff92ccfeffa6ccfeffb8ccfeffccccfeffe0ccfeff18effeffeceffeffb4f0feffb8f0feffbcf0feffc0f0feffc4f0feffc8f0feffccf0feffd0f0feffd6f0feffdaf0feffe0f0feffe4f0feffeaf0fefff0f0fefff8f2feffcaf3feff92f4feff96f4feff9af4feff9ef4feffa2f4feffa6f4feffaaf4feffaef4feffb4f4feffb8f4feffbef4feffc2f4feffc8f4feffcef4fefffc8affffd08bffffd28bffffd68bffffda8bffffde8bffffe28bffffe68bffffea8bffffee8bfffff28bfffff68bfffffa8bfffffe8bffff028cffff068cffffc68dffff9a8effff628fffff668fffff6a8fffff6e8fffff728fffff768fffff7a8fffff7e8fffff848fffff888fffff8e8fffff928fffff988fffff9e8fffff02f0ffffdcfbffff00000000fa2600000a2700003c2700009c400000ac400000c6400000de400000525600006256000094560000f460000004610000366100008875000098750000
+    m_ExpandedIDs: 207fffffae86ffff4890ffffc490ffffbaafffff36b0ffff5ed3fffff6deffff88e0fffffef2ffffe6f5ffff6cfaffffdcfbffff00000000802900008a290000562a0000602a0000fc2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: ContentPanel
-      m_OriginalName: ContentPanel
+      m_Name: gambarhewan
+      m_OriginalName: gambarhewan
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 30154
+      m_UserData: -20488
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -501,7 +501,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 3}
     m_SearchString: 
   m_ExpandedScenes:
-  - carihewan
+  - coba
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -532,14 +532,14 @@ MonoBehaviour:
     width: 633
     height: 313
   m_SceneLighting: 1
-  lastFramingTime: 3408.6098791424706
+  lastFramingTime: 570.4869661917539
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.057291657, y: -0.6411135, z: -9}
+    m_Target: {x: 92.5, y: 148, z: 0}
     speed: 2
-    m_Value: {x: -0.057291657, y: -0.6411135, z: -9}
+    m_Value: {x: 92.5, y: 148, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -566,14 +566,14 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.235915
+    m_Target: 575.67505
     speed: 2
-    m_Value: 10.235915
+    m_Value: 575.67505
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_LastSceneViewRotation: {x: 0.16821326, y: -0.7055596, z: 0.17851366, w: 0.66484797}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -613,8 +613,8 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -316.5
-    m_HBaseRangeMax: 316.5
+    m_HBaseRangeMin: -92.5
+    m_HBaseRangeMax: 92.5
     m_VBaseRangeMin: -148
     m_VBaseRangeMax: 148
     m_HAllowExceedBaseRangeMin: 1
