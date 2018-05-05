@@ -13,6 +13,6 @@ public class SwitchHalPembuka : MonoBehaviour
     IEnumerator LoadLevelAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("halamanutama");
+        SceneManager.LoadScene("utama");
     }
 }
