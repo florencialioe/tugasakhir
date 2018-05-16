@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class coba2 : MonoBehaviour {
+public class coba2 : MonoBehaviour
+{
 
     public GameObject back;
     public GameObject home;

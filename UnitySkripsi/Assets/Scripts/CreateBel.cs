@@ -88,7 +88,7 @@ public class CreateBel : MonoBehaviour
         newcanvas.transform.SetParent(contentPanel);
 
         back = buttonstatic.back.GetComponent<Button>();
-        back.onClick.AddListener(()=> changemenuscene("halamanhewan"));
+        back.onClick.AddListener(() => changemenuscene("halamanhewan"));
 
         home = buttonstatic.home.GetComponent<Button>();
         home.onClick.AddListener(() => changemenuscene("halamanutama"));
@@ -102,7 +102,7 @@ public class CreateBel : MonoBehaviour
         previous = buttonstatic.previous.GetComponent<Button>();
         previous.onClick.AddListener(() => ButtonPrevious());
     }
-    void OnDestroy ()
+    void OnDestroy()
     {
         back.onClick.RemoveListener(() => changemenuscene("halamanhewan"));
         home.onClick.RemoveListener(() => changemenuscene("halamanutama"));
@@ -116,7 +116,7 @@ public class CreateBel : MonoBehaviour
 
     void ButtonNext()
     {
-        if(index < isi.Count)
+        if (index < isi.Count)
         {
             index++;
             ShowIsi(index);
@@ -130,9 +130,9 @@ public class CreateBel : MonoBehaviour
             index--;
             ShowIsi(index);
         }
-        
+
     }
-    void ShowIsi (int i)
+    void ShowIsi(int i)
     {
         foreach (GameObject newButton in isi)
         {
