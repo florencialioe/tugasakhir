@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+using UnityEngine.SceneManagement;
 [System.Serializable]
 
 public class ket
@@ -111,7 +111,7 @@ public class CreateBel : MonoBehaviour
     }
     public void changemenuscene(string scenename)
     {
-        Application.LoadLevel(scenename);
+        SceneManager.LoadScene(scenename);
     }
 
     void ButtonNext()
