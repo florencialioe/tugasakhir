@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/profil.unity
+- path: Assets/utama.unity
   isLoaded: 1
   isActive: 1

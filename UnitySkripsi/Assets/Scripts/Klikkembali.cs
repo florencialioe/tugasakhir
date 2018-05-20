@@ -13,6 +13,6 @@ public class Klikkembali : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
-            SceneManager.LoadScene(sceneIndex--);
+            SceneManager.LoadScene(sceneIndex-1);
 	}
 }
