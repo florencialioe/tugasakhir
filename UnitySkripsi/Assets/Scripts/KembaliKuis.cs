@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Klikkembali : MonoBehaviour {
+public class KembaliKuis : MonoBehaviour
+{
     int sceneIndex;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
-            SceneManager.LoadScene(sceneIndex--);
-	}
+            SceneManager.LoadScene(sceneIndex);
+    }
 }
