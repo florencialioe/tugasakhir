@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-
-
 public class StrokeVideo : MonoBehaviour
 {
 
@@ -27,7 +25,6 @@ public class StrokeVideo : MonoBehaviour
         videoPlayer = gameObject.AddComponent<VideoPlayer>();
 
         videoPlayer.playOnAwake = false;
-        
 
         videoPlayer.source = VideoSource.VideoClip;
 
@@ -48,11 +45,14 @@ public class StrokeVideo : MonoBehaviour
         Debug.Log("Playing Video");
         while (videoPlayer.isPlaying)
         {
+            
             Debug.LogWarning("Video Time: " + Mathf.FloorToInt((float)videoPlayer.time));
             yield return null;
+           
         }
 
         Debug.Log("Done Playing Video");
+        
     }
 
     public void PlayPause()
