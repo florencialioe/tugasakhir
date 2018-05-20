@@ -4,16 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Klikkeluar : MonoBehaviour {
-    int sceneIndex;
+    //int sceneIndex;
+    public GameObject keluar;
+
 	// Use this for initialization
 	void Start () {
-        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        keluar.SetActive(false);
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
-            Application.Quit();
+        {
+            keluar.SetActive(true);
+        }
+
+            //Application.Quit();
 	}
 
 }
