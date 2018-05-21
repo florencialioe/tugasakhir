@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class CreateTulis : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class CreateTulis : MonoBehaviour
         public Sprite guratanl9 { get; set; }
         public Sprite guratan20 { get; set; }
         public Sprite guratan2l { get; set; }
+        public VideoPlayer video { get; set; }
 
     }
     [Header("Content")]
@@ -55,6 +57,7 @@ public class CreateTulis : MonoBehaviour
     [SerializeField] Sprite[] guratan19;
     [SerializeField] Sprite[] guratan20;
     [SerializeField] Sprite[] guratan21;
+    [SerializeField] VideoPlayer[] video;
 
 
     int SizeContent;
@@ -83,6 +86,7 @@ public class CreateTulis : MonoBehaviour
     [SerializeField] Image guratan20Holder;
     [SerializeField] Image guratan21Holder;
     [SerializeField] Text MeaningHolder;
+    [SerializeField] VideoClip VideoHolder;
    
 
     [Header("Button")]
@@ -122,6 +126,7 @@ public class CreateTulis : MonoBehaviour
         guratan20Holder.sprite = guratan20[IndexContent];
         guratan21Holder.sprite = guratan21[IndexContent];
         MeaningHolder.text = Meaning[IndexContent];
+
         //sound
         //AudioHolder.Stop();
         //AudioHolder.clip = SoundAnimal[IndexContent];

@@ -16,6 +16,6 @@ public class KembaliHewan : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-            SceneManager.LoadScene("hewan");
+            SceneManager.LoadScene("jenishewan");
     }
 }
