@@ -8,6 +8,7 @@ public class CreateTulis : MonoBehaviour
 {
     public class ContentBelajar
     {
+
         public string Meaning { get; set; }
         public Sprite guratanl { get; set; }
         public Sprite guratan2 { get; set; }
@@ -30,7 +31,7 @@ public class CreateTulis : MonoBehaviour
         public Sprite guratanl9 { get; set; }
         public Sprite guratan20 { get; set; }
         public Sprite guratan2l { get; set; }
-        public VideoPlayer video { get; set; }
+        public VideoClip video { get; set; }
 
     }
     [Header("Content")]
@@ -57,7 +58,7 @@ public class CreateTulis : MonoBehaviour
     [SerializeField] Sprite[] guratan19;
     [SerializeField] Sprite[] guratan20;
     [SerializeField] Sprite[] guratan21;
-    [SerializeField] VideoPlayer[] video;
+    [SerializeField] VideoClip[] video;
 
 
     int SizeContent;
@@ -86,7 +87,7 @@ public class CreateTulis : MonoBehaviour
     [SerializeField] Image guratan20Holder;
     [SerializeField] Image guratan21Holder;
     [SerializeField] Text MeaningHolder;
-    [SerializeField] VideoClip VideoHolder;
+    [SerializeField] VideoPlayer VideoHolder;
    
 
     [Header("Button")]

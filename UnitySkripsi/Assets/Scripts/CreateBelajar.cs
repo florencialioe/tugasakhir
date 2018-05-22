@@ -96,8 +96,4 @@ public class CreateBelajar : MonoBehaviour {
 
     }
 
-
-
-
-
 }

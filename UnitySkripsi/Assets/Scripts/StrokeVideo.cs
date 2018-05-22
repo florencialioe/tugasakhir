@@ -75,4 +75,3 @@ public class StrokeVideo : MonoBehaviour
         }
     }
 }
-

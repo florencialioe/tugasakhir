@@ -11,17 +11,14 @@ public class Klikkeluar : MonoBehaviour {
 	void Start () {
         //sceneIndex = SceneManager.GetActiveScene().buildIndex;
         keluar.SetActive(false);
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            keluar.SetActive(true);
+            keluar.SetActive(true); 
         }
-
-            //Application.Quit();
-	}
-
+        //Application.Quit();
+    }
 }
