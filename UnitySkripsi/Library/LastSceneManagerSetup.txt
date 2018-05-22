@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/hewandarat.unity
+- path: Assets/kdenhew.unity
   isLoaded: 1
   isActive: 1
