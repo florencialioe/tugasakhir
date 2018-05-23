@@ -21,10 +21,10 @@ public class pil2 : MonoBehaviour
             GetComponent<Text>().text = pilih2[kosakata.randQuestion];
         }
     }
-    void OnMouseDown()
+    public void diKlik()
     {
-        kosakata.pilihjawaban = gameObject.name;
+        kosakata.pilihjawaban = "2";
         kosakata.pilihanditentukan = "y";
-        //Debug.Log(gameObject.name);
+        Debug.Log(gameObject.name);
     }
 }

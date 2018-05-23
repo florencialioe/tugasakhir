@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/belajarmendengar.unity
+- path: Assets/kguratandarat.unity
   isLoaded: 1
   isActive: 1

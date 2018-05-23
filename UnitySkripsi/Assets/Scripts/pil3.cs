@@ -21,11 +21,11 @@ public class pil3 : MonoBehaviour
             GetComponent<Text>().text = pilih3[kosakata.randQuestion];
         }
     }
-    void OnMouseDown()
+    public void diKlik()
     {
-        kosakata.pilihjawaban = gameObject.name;
+        kosakata.pilihjawaban = "3";
         kosakata.pilihanditentukan = "y";
-        //Debug.Log(gameObject.name);
+        Debug.Log(gameObject.name);
     }
     
 }

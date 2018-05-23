@@ -22,11 +22,11 @@ public class pil1 : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    public void diKlik()
     {
-        kosakata.pilihjawaban = gameObject.name;
+        kosakata.pilihjawaban = "1";
         kosakata.pilihanditentukan = "y";
-        //Debug.Log (gameObject.name);
+        Debug.Log (gameObject.name);
     }
     
 }

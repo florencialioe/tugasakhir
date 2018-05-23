@@ -10,10 +10,15 @@ public class kosakata : MonoBehaviour {
     public static string pilihjawaban;
     public static string pilihanditentukan = "n";
     public static int randQuestion = -1;
+
+    public static int lives = 5;
+    public static int score = 0;
 	// Use this for initialization
 	void Start () {
+        lives = 5;
+        score = 0;
         //GetComponent<Text>().text = question[0];
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,9 +35,14 @@ public class kosakata : MonoBehaviour {
         {
             pilihanditentukan = "n";
 
-            if(jawabanbenar[randQuestion] == pilihjawaban)
+            if (jawabanbenar[randQuestion] == pilihjawaban)
             {
-                Debug.Log("Correct!!"+ "  " +randQuestion);
+                Debug.Log("Correct!!" + "  " + randQuestion);
+                score += 10;
+                randQuestion = -1;
+            }
+            else {
+                lives--;
             }
         }
 	}
