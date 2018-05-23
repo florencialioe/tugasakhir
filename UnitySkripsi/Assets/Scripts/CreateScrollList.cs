@@ -21,50 +21,56 @@ public class CreateScrollList : MonoBehaviour {
     public Transform contentPanel;
     public List<item> itemList;
     
-    //[SerializeField] ScrollRect scrollRect;
-    //[SerializeField] RectTransform content_Panel;
-    //[SerializeField] Vector2 valueX;
+
 
     void Start()
     {
         PopulateList();
-       // Snapto(valueX);
+    
     }
 
-    //public void Snapto(Vector2 alue)
-   // {
-   //    Canvas.ForceUpdateCanvases();
-      // content_Panel.anchoredPosition = (Vector2)scrollRect.transform.InverseTransformPoint(alue);
-
-    //}
-
-    //private void Update()
-    //{
-        //Snapto(valueX);
-   // }
+  
     void PopulateList()
     {
+        bool finishAllQuiz = false;
+        if (PlayerPrefs.GetInt("KuisKata") > 0 && PlayerPrefs.GetInt("KuisGambar") > 0 && PlayerPrefs.GetInt("KuisDengar") > 0)
+        {
+            finishAllQuiz = true;
+        }
         foreach (var item in itemList)
         {
-           // if (itemlist < 10)
-            //{
-                GameObject newButton = Instantiate(sampleButton) as GameObject;
-                SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
-                buttonScript.hanzi.text = item.han;
-                buttonScript.pinyin.text = item.pin;
-                buttonScript.arti.text = item.ar;
-                buttonScript.gambarhewan.sprite = item.gambar;
-                buttonScript.bintang.SetActive(item.star);
 
-                newButton.transform.SetParent(contentPanel);
-            //}
-            /*else
+            GameObject newButton = Instantiate(sampleButton) as GameObject;
+            SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
+            buttonScript.hanzi.text = item.han;
+            buttonScript.pinyin.text = item.pin;
+            buttonScript.arti.text = item.ar;
+            buttonScript.gambarhewan.sprite = item.gambar;
+            if (finishAllQuiz == true)
             {
-                GameObject newButton = Instantiate(sampleButton) as GameObject;
-                SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
-                buttonScript.gambarhewan.sprite = item.gambar;
-                buttonScript.bintang.SetActive(item.kunci);
-            }*/
+                item.kunci = false;
+            }
+
+
+            if (item.star == true)
+            {
+                buttonScript.bintang.SetActive(true);
+            }
+            else
+            {
+                buttonScript.bintang.SetActive(false);
+            }
+            if (item.kunci == true)
+            {
+                buttonScript.kunci.SetActive(true);
+            }
+            else
+            {
+                buttonScript.kunci.SetActive(false);
+            }
+
+            newButton.transform.SetParent(contentPanel);
+           
             
         }
     }

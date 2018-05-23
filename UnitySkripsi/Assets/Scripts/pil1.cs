@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class pil1 : MonoBehaviour
 {
-    List<string> pilih1 = new List<string>() { "7", "10", "8", "15", "9", "16", "6", "8", "7", "16" };
+    [SerializeField] string[] pilih1 = new string[] { "7", "10", "8", "15", "9", "16", "6", "8", "7", "16" };
 
     // Use this for initialization
     void Start()
@@ -22,11 +22,11 @@ public class pil1 : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
+    public void diKlik()
     {
-        kosakata.pilihjawaban = gameObject.name;
+        kosakata.pilihjawaban = "1";
         kosakata.pilihanditentukan = "y";
-        //Debug.Log (gameObject.name);
+        Debug.Log (gameObject.name);
     }
     
 }

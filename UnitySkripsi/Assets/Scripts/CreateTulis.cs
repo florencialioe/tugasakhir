@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
+
+
 public class CreateTulis : MonoBehaviour
 {
     public class ContentBelajar
@@ -34,30 +36,15 @@ public class CreateTulis : MonoBehaviour
         public VideoClip video { get; set; }
 
     }
+    [System.Serializable]
+    public class guratanP
+    {
+        public Sprite[] gurat;
+    }
     [Header("Content")]
     //[SerializeField] ContentBelajar[] arrayContent;
     [SerializeField] string[] Meaning;
-    [SerializeField] Sprite[] guratan1;
-    [SerializeField] Sprite[] guratan2;
-    [SerializeField] Sprite[] guratan3;
-    [SerializeField] Sprite[] guratan4;
-    [SerializeField] Sprite[] guratan5;
-    [SerializeField] Sprite[] guratan6;
-    [SerializeField] Sprite[] guratan7;
-    [SerializeField] Sprite[] guratan8;
-    [SerializeField] Sprite[] guratan9;
-    [SerializeField] Sprite[] guratan10;
-    [SerializeField] Sprite[] guratan11;
-    [SerializeField] Sprite[] guratan12;
-    [SerializeField] Sprite[] guratan13;
-    [SerializeField] Sprite[] guratan14;
-    [SerializeField] Sprite[] guratan15;
-    [SerializeField] Sprite[] guratan16;
-    [SerializeField] Sprite[] guratan17;
-    [SerializeField] Sprite[] guratan18;
-    [SerializeField] Sprite[] guratan19;
-    [SerializeField] Sprite[] guratan20;
-    [SerializeField] Sprite[] guratan21;
+    [SerializeField] guratanP[] guratan;
     [SerializeField] VideoClip[] video;
 
 
@@ -65,27 +52,7 @@ public class CreateTulis : MonoBehaviour
     int IndexContent;
 
     [Header("Holder")]
-    [SerializeField] Image guratan1Holder;
-    [SerializeField] Image guratan2Holder;
-    [SerializeField] Image guratan3Holder;
-    [SerializeField] Image guratan4Holder;
-    [SerializeField] Image guratan5Holder;
-    [SerializeField] Image guratan6Holder;
-    [SerializeField] Image guratan7Holder;
-    [SerializeField] Image guratan8Holder;
-    [SerializeField] Image guratan9Holder;
-    [SerializeField] Image guratan10Holder;
-    [SerializeField] Image guratan11Holder;
-    [SerializeField] Image guratan12Holder;
-    [SerializeField] Image guratan13Holder;
-    [SerializeField] Image guratan14Holder;
-    [SerializeField] Image guratan15Holder;
-    [SerializeField] Image guratan16Holder;
-    [SerializeField] Image guratan17Holder;
-    [SerializeField] Image guratan18Holder;
-    [SerializeField] Image guratan19Holder;
-    [SerializeField] Image guratan20Holder;
-    [SerializeField] Image guratan21Holder;
+    [SerializeField] Image[] GuratanHolder;
     [SerializeField] Text MeaningHolder;
     [SerializeField] VideoPlayer VideoHolder;
 
@@ -99,7 +66,7 @@ public class CreateTulis : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        SizeContent = Meaning.Length;
+        SizeContent = Meaning.GetUpperBound(0);
         IndexContent = 0;
 
         insertContent();
@@ -107,27 +74,18 @@ public class CreateTulis : MonoBehaviour
 
     public void insertContent()
     {
-        guratan1Holder.sprite = guratan1[IndexContent];
-        guratan2Holder.sprite = guratan2[IndexContent];
-        guratan3Holder.sprite = guratan3[IndexContent];
-        guratan4Holder.sprite = guratan4[IndexContent];
-        guratan5Holder.sprite = guratan5[IndexContent];
-        guratan6Holder.sprite = guratan6[IndexContent];
-        guratan7Holder.sprite = guratan7[IndexContent];
-        guratan8Holder.sprite = guratan8[IndexContent];
-        guratan9Holder.sprite = guratan9[IndexContent];
-        guratan10Holder.sprite = guratan10[IndexContent];
-        guratan11Holder.sprite = guratan11[IndexContent];
-        guratan12Holder.sprite = guratan12[IndexContent];
-        guratan13Holder.sprite = guratan13[IndexContent];
-        guratan14Holder.sprite = guratan14[IndexContent];
-        guratan15Holder.sprite = guratan15[IndexContent];
-        guratan16Holder.sprite = guratan16[IndexContent];
-        guratan17Holder.sprite = guratan17[IndexContent];
-        guratan18Holder.sprite = guratan18[IndexContent];
-        guratan19Holder.sprite = guratan19[IndexContent];
-        guratan20Holder.sprite = guratan20[IndexContent];
-        guratan21Holder.sprite = guratan21[IndexContent];
+
+        for (int i = 0; i <= GuratanHolder.GetUpperBound(0); i++)
+        {
+            //Debug.Log(i);
+            if (guratan[IndexContent].gurat[i] == null)
+            {
+                Color color = GuratanHolder[i].color;
+                color.a = 0;
+                GuratanHolder[i].color = color;
+            }
+            GuratanHolder[i].sprite = guratan[IndexContent].gurat[i];
+        }       
         MeaningHolder.text = Meaning[IndexContent];
 
         //sound
