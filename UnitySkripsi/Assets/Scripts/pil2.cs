@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class pil2 : MonoBehaviour
 {
-    List<string> pilih2 = new List<string>() { "6", "11", "7", "14", "10", "18", "7", "7", "8", "14" };
+    [SerializeField] string[] pilih2 = new string[] { "6", "11", "7", "14", "10", "18", "7", "7", "8", "14" };
 
     // Use this for initialization
     void Start()
