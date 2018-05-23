@@ -13,13 +13,14 @@ public class item
     public string ar;
     public Sprite gambar;
     public bool star;
+    public bool kunci;
 }
 
 public class CreateScrollList : MonoBehaviour {
     public GameObject sampleButton;
     public Transform contentPanel;
     public List<item> itemList;
-
+    
     //[SerializeField] ScrollRect scrollRect;
     //[SerializeField] RectTransform content_Panel;
     //[SerializeField] Vector2 valueX;
@@ -45,15 +46,26 @@ public class CreateScrollList : MonoBehaviour {
     {
         foreach (var item in itemList)
         {
-            GameObject newButton = Instantiate(sampleButton) as GameObject;
-            SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
-            buttonScript.hanzi.text = item.han;
-            buttonScript.pinyin.text = item.pin;
-            buttonScript.arti.text = item.ar;
-            buttonScript.gambarhewan.sprite = item.gambar;
-            buttonScript.bintang.SetActive(item.star);
+           // if (itemlist < 10)
+            //{
+                GameObject newButton = Instantiate(sampleButton) as GameObject;
+                SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
+                buttonScript.hanzi.text = item.han;
+                buttonScript.pinyin.text = item.pin;
+                buttonScript.arti.text = item.ar;
+                buttonScript.gambarhewan.sprite = item.gambar;
+                buttonScript.bintang.SetActive(item.star);
 
-            newButton.transform.SetParent(contentPanel);
+                newButton.transform.SetParent(contentPanel);
+            //}
+            /*else
+            {
+                GameObject newButton = Instantiate(sampleButton) as GameObject;
+                SampleButtonScript buttonScript = newButton.GetComponent<SampleButtonScript>();
+                buttonScript.gambarhewan.sprite = item.gambar;
+                buttonScript.bintang.SetActive(item.kunci);
+            }*/
+            
         }
     }
 }

@@ -12,5 +12,6 @@ public class SampleButtonScript : MonoBehaviour
     public Text arti;
     public Image gambarhewan;
     public GameObject bintang;
+    public GameObject kunci;
 
 }

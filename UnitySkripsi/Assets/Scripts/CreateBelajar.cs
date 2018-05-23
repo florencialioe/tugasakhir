@@ -30,6 +30,7 @@ public class CreateBelajar : MonoBehaviour {
     [SerializeField] AudioSource AudioHolder;
 
     [Header("Button")]
+    [SerializeField] GameObject RepeatButton;
     [SerializeField] GameObject NextButton;
     [SerializeField] GameObject PrevButton;
 	// Use this for initialization
@@ -48,9 +49,9 @@ public class CreateBelajar : MonoBehaviour {
         PinyinHolder.text = Pinyin[IndexContent];
         MeaningHolder.text = Meaning[IndexContent];
         //sound
-        //AudioHolder.Stop();
-        //AudioHolder.clip = SoundAnimal[IndexContent];
-        //AudioHolder.Play();
+        AudioHolder.Stop();
+        AudioHolder.clip = SoundAnimal[IndexContent];
+        AudioHolder.Play();
     }
     // Update is called once per frame
     void Update () {

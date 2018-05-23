@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/kdenhew.unity
+- path: Assets/belajarmendengar.unity
   isLoaded: 1
   isActive: 1
