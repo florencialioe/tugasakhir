@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/belajarmendengar.unity
+- path: Assets/belajarmenulis.unity
   isLoaded: 1
   isActive: 1
