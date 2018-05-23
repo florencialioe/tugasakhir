@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class KuisGambar : MonoBehaviour {
     [SerializeField] Sprite[] question ;
     [SerializeField] string[] jawabanbenar = new string[] { "1", "2", "1", "1", "3", "3", "1", "2", "2", "2" };
@@ -26,6 +27,7 @@ public class KuisGambar : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        
         if (kosakata.lives <= 0)
         {
             //pindah halaman or something?
@@ -36,6 +38,11 @@ public class KuisGambar : MonoBehaviour {
         {
             kosakata.randQuestion = Random.Range(0, question.GetUpperBound(0));
             soal++;
+            if (soal >= question.GetUpperBound(0) + 1) {
+                //kalau sudah selesai soal
+                PlayerPrefs.SetInt("KuisGambar", 1);
+                SceneManager.LoadScene("utama");
+            }
         }
         if (kosakata.randQuestion > -1)
         {

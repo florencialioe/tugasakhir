@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class kosakata : MonoBehaviour {
@@ -37,6 +38,12 @@ public class kosakata : MonoBehaviour {
         {
             randQuestion = Random.Range(0, question.GetUpperBound(0));
             soal++;
+            if (soal >= question.GetUpperBound(0) + 1)
+            {
+                //kalau sudah selesai soal
+                PlayerPrefs.SetInt("KuisKata", 1);
+                SceneManager.LoadScene("utama");
+            }
         }
         if (randQuestion>-1)
         {
