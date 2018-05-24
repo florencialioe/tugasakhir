@@ -30,6 +30,7 @@ public class KuisGambar : MonoBehaviour {
         
         if (kosakata.lives <= 0)
         {
+            SceneManager.LoadScene("gagal");
             //pindah halaman or something?
         }
         soalIndex.text = soal.ToString();
@@ -41,7 +42,7 @@ public class KuisGambar : MonoBehaviour {
             if (soal >= question.GetUpperBound(0) + 1) {
                 //kalau sudah selesai soal
                 PlayerPrefs.SetInt("KuisGambar", 1);
-                SceneManager.LoadScene("utama");
+                SceneManager.LoadScene("berhasil");
             }
         }
         if (kosakata.randQuestion > -1)

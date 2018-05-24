@@ -30,6 +30,7 @@ public class kosakata : MonoBehaviour {
 	void Update () {
         if (lives <= 0)
         {
+            SceneManager.LoadScene("gagal");
             //pindah halaman or something?
         }
         soalIndex.text = soal.ToString();
@@ -42,7 +43,7 @@ public class kosakata : MonoBehaviour {
             {
                 //kalau sudah selesai soal
                 PlayerPrefs.SetInt("KuisKata", 1);
-                SceneManager.LoadScene("utama");
+                SceneManager.LoadScene("berhasil");
             }
         }
         if (randQuestion>-1)
