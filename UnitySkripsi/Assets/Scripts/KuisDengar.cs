@@ -31,6 +31,7 @@ public class KuisDengar : MonoBehaviour {
     {
         if (kosakata.lives <= 0)
         {
+            SceneManager.LoadScene("gagal");
             //pindah halaman or something?
         }
         soalIndex.text = soal.ToString();
@@ -43,7 +44,7 @@ public class KuisDengar : MonoBehaviour {
             {
                 //kalau sudah selesai soal
                 PlayerPrefs.SetInt("KuisDengar", 1);
-                SceneManager.LoadScene("utama");
+                SceneManager.LoadScene("berhasil");
             }
         }
         if (kosakata.randQuestion > -1)

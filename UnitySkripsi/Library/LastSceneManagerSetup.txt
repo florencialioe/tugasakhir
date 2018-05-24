@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/belajarmenulis.unity
-=======
-- path: Assets/halamanbelajarmenulis 1.unity
->>>>>>> 3c3f771b6caac4246ac31601b342a85668dbe641
+- path: Assets/hewandarat.unity
   isLoaded: 1
   isActive: 1
