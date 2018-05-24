@@ -4,13 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-
-
 public class CreateTulis : MonoBehaviour
 {
     public class ContentBelajar
     {
-
         public string Meaning { get; set; }
         public Sprite guratanl { get; set; }
         public Sprite guratan2 { get; set; }
@@ -34,7 +31,6 @@ public class CreateTulis : MonoBehaviour
         public Sprite guratan20 { get; set; }
         public Sprite guratan2l { get; set; }
         public VideoClip video { get; set; }
-
     }
     [System.Serializable]
     public class guratanP
@@ -47,7 +43,6 @@ public class CreateTulis : MonoBehaviour
     [SerializeField] guratanP[] guratan;
     [SerializeField] VideoClip[] video;
 
-
     int SizeContent;
     int IndexContent;
 
@@ -55,7 +50,6 @@ public class CreateTulis : MonoBehaviour
     [SerializeField] Image[] GuratanHolder;
     [SerializeField] Text MeaningHolder;
     [SerializeField] VideoPlayer VideoHolder;
-
 
     [Header("Button")]
     [SerializeField] GameObject PlayButton;
@@ -115,11 +109,28 @@ public class CreateTulis : MonoBehaviour
         }
     }
 
-    public void Video()
+    public void VideoPause()
     {
-       VideoHolder.Stop();
-       VideoHolder.Play();
+        if (VideoHolder.isPlaying)
+        {
+            PlayButton.SetActive(true);
+            PauseButton.SetActive(false);
+            VideoHolder.Pause();
+            
+        }
+        else if (!VideoHolder.isPlaying)
+        {
+            PauseButton.SetActive(true);
+            PlayButton.SetActive(false); 
+            VideoHolder.Play();
+        }
     }
+
+    /*public void VideoPlay()
+    {
+        
+        
+    }*/
 
     public void NextContent()
     {
@@ -128,7 +139,6 @@ public class CreateTulis : MonoBehaviour
             IndexContent++;
             insertContent();
         }
-
     }
 
     public void PrevContent()
@@ -138,74 +148,5 @@ public class CreateTulis : MonoBehaviour
             IndexContent--;
             insertContent();
         }
-
-
     }
-    /*public RawImage image;
-    public GameObject playIcon;
-
-    public VideoClip videoToPlay;
-
-    private VideoPlayer videoPlayer;
-    private VideoSource videoSource;
-
-    private bool isPaused = false;
-    private bool firstRun = true;
-
-    IEnumerator playVideo()
-    {
-        playIcon.SetActive(false);
-        firstRun = false;
-        videoPlayer = gameObject.AddComponent<VideoPlayer>();
-
-        videoPlayer.playOnAwake = false;
-
-        videoPlayer.source = VideoSource.VideoClip;
-
-        videoPlayer.clip = videoToPlay;
-        videoPlayer.Prepare();
-
-        while (!videoPlayer.isPrepared)
-        {
-            yield return null;
-        }
-
-        Debug.Log("Done Preparing Video");
-
-        image.texture = videoPlayer.texture;
-
-        videoPlayer.Play();
-
-        Debug.Log("Playing Video");
-        while (videoPlayer.isPlaying)
-        {
-
-            Debug.LogWarning("Video Time: " + Mathf.FloorToInt((float)videoPlayer.time));
-            yield return null;
-
-        }
-
-        Debug.Log("Done Playing Video");
-
-    }
-
-    public void PlayPause()
-    {
-        if (!firstRun && !isPaused)
-        {
-            videoPlayer.Pause();
-            playIcon.SetActive(true);
-            isPaused = true;
-        }
-        else if (!firstRun && isPaused)
-        {
-            videoPlayer.Play();
-            playIcon.SetActive(false);
-            isPaused = false;
-        }
-        else
-        {
-            StartCoroutine(playVideo());
-        }
-    }*/
 }
