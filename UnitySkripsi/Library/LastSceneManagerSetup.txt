@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/hewanair.unity
+- path: Assets/dengarair.unity
   isLoaded: 1
   isActive: 1
