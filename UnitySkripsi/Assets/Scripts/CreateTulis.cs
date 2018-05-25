@@ -85,6 +85,7 @@ public class CreateTulis : MonoBehaviour
         //sound
         VideoHolder.Stop();
         VideoHolder.clip = video[IndexContent];
+        PauseButton.SetActive(true);
         VideoHolder.Play();
     }
     // Update is called once per frame
@@ -109,7 +110,7 @@ public class CreateTulis : MonoBehaviour
         }
     }
 
-    public void VideoPause()
+    public void VideoPlayPause()
     {
         if (VideoHolder.isPlaying)
         {
@@ -125,12 +126,6 @@ public class CreateTulis : MonoBehaviour
             VideoHolder.Play();
         }
     }
-
-    /*public void VideoPlay()
-    {
-        
-        
-    }*/
 
     public void NextContent()
     {
