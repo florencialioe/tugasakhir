@@ -41,7 +41,7 @@ public class KuisGambar : MonoBehaviour {
             soal++;
             if (soal >= question.GetUpperBound(0) + 1) {
                 //kalau sudah selesai soal
-                PlayerPrefs.SetInt("KuisGambar", 1);
+                PlayerPrefs.SetInt("Gambar", 1);
                 SceneManager.LoadScene("berhasil");
             }
         }

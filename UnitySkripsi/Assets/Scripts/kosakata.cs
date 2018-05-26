@@ -42,7 +42,7 @@ public class kosakata : MonoBehaviour {
             if (soal >= question.GetUpperBound(0) + 1)
             {
                 //kalau sudah selesai soal
-                PlayerPrefs.SetInt("KuisKata", 1);
+                PlayerPrefs.SetInt("Kata", 1);
                 SceneManager.LoadScene("berhasil");
             }
         }

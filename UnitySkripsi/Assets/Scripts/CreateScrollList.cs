@@ -33,7 +33,7 @@ public class CreateScrollList : MonoBehaviour {
     void PopulateList()
     {
         bool finishAllQuiz = false;
-        if (PlayerPrefs.GetInt("KuisKata") > 0 && PlayerPrefs.GetInt("KuisGambar") > 0 && PlayerPrefs.GetInt("KuisDengar") > 0)
+       if (PlayerPrefs.GetInt("Kata") > 0 && PlayerPrefs.GetInt("Gambar") > 0 && PlayerPrefs.GetInt("Dengar") > 0)
         {
             finishAllQuiz = true;
         }

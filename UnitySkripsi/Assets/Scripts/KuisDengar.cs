@@ -43,7 +43,7 @@ public class KuisDengar : MonoBehaviour {
             if (soal >= question.GetUpperBound(0) + 1)
             {
                 //kalau sudah selesai soal
-                PlayerPrefs.SetInt("KuisDengar", 1);
+                PlayerPrefs.SetInt("Dengar", 1);
                 SceneManager.LoadScene("berhasil");
             }
         }
