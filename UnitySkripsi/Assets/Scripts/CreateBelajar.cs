@@ -36,8 +36,8 @@ public class CreateBelajar : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         SizeContent = ImagesAnimal.Length;
-        IndexContent = 0;
-
+        IndexContent =CreateScrollList.IndexButton;
+        CreateScrollList.IndexButton = 0;
         insertContent();
       
 
