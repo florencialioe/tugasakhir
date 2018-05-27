@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/progkuisguratan.unity
+- path: Assets/utama.unity
   isLoaded: 1
   isActive: 1
