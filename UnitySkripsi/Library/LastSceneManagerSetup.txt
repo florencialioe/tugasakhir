@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/kdhnew.unity
+- path: Assets/progkuisguratan.unity
   isLoaded: 1
   isActive: 1
