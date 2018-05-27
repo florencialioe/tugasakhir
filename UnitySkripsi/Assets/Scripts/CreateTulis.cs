@@ -72,12 +72,16 @@ public class CreateTulis : MonoBehaviour
         for (int i = 0; i <= GuratanHolder.GetUpperBound(0); i++)
         {
             //Debug.Log(i);
+            Color color = GuratanHolder[i].color;
             if (guratan[IndexContent].gurat[i] == null)
-            {
-                Color color = GuratanHolder[i].color;
-                color.a = 0;
-                GuratanHolder[i].color = color;
+            {                
+                color.a = 0;               
             }
+            else
+            {
+                color.a = 255;                
+            }
+            GuratanHolder[i].color = color;
             GuratanHolder[i].sprite = guratan[IndexContent].gurat[i];
         }       
         MeaningHolder.text = Meaning[IndexContent];

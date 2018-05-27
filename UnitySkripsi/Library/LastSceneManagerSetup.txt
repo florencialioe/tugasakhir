@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/hewanair.unity
+=======
+- path: Assets/hewandarat.unity
+>>>>>>> 31a1447ad2076a9a9f6c440232081174169d6d47
   isLoaded: 1
   isActive: 1
