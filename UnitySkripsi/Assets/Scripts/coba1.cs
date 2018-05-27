@@ -35,11 +35,11 @@ public class coba1 : MonoBehaviour
         buttonScript.kunci.SetActive(true);
 
         GameObject newButton1 = Instantiate(sampleButton1) as GameObject;
-        coba buttonScript1 = newButton.GetComponent<coba>();
+        coba buttonScript1 = newButton1.GetComponent<coba>();
         buttonScript1.kunci.SetActive(true);
 
         GameObject newButton2 = Instantiate(sampleButton2) as GameObject;
-        coba buttonScript2 = newButton.GetComponent<coba>();
+        coba buttonScript2 = newButton2.GetComponent<coba>();
         buttonScript2.kunci.SetActive(true);
 
 
@@ -49,7 +49,6 @@ public class coba1 : MonoBehaviour
         {
             finishAllQuizDarat = true;
         }
-
         if (PlayerPrefs.GetInt("KuisKataAir") > 0 && PlayerPrefs.GetInt("KuisGambarAir") > 0 && PlayerPrefs.GetInt("KuisDengarAir") > 0)
         {
             finishAllQuizAir = true;
@@ -60,7 +59,6 @@ public class coba1 : MonoBehaviour
         {
             buttonScript.kunci.SetActive(false);
         }
-
         if (finishAllQuizAir == true)
         {
             buttonScript1.kunci.SetActive(false);
