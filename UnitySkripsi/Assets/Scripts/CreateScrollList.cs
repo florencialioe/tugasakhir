@@ -115,7 +115,6 @@ public class CreateScrollList : MonoBehaviour {
         }
     }
 
-  
     void PopulateList()
     {
         bool finishAllQuiz = false;

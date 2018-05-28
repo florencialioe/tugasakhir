@@ -9,7 +9,7 @@ public class CreateTulis : MonoBehaviour
     public class ContentBelajar
     {
         public string Meaning { get; set; }
-        public Sprite guratanl { get; set; }
+       /* public Sprite guratanl { get; set; }
         public Sprite guratan2 { get; set; }
         public Sprite guratan3 { get; set; }
         public Sprite guratan4 { get; set; }
@@ -29,25 +29,25 @@ public class CreateTulis : MonoBehaviour
         public Sprite guratan18 { get; set; }
         public Sprite guratanl9 { get; set; }
         public Sprite guratan20 { get; set; }
-        public Sprite guratan2l { get; set; }
+        public Sprite guratan2l { get; set; }*/
         public VideoClip video { get; set; }
     }
-    [System.Serializable]
+   /* [System.Serializable]
     public class guratanP
     {
         public Sprite[] gurat;
-    }
+    }*/
     [Header("Content")]
     //[SerializeField] ContentBelajar[] arrayContent;
     [SerializeField] string[] Meaning;
-    [SerializeField] guratanP[] guratan;
+    //[SerializeField] guratanP[] guratan;
     [SerializeField] VideoClip[] video;
 
     int SizeContent;
     int IndexContent;
 
     [Header("Holder")]
-    [SerializeField] Image[] GuratanHolder;
+   // [SerializeField] Image[] GuratanHolder;
     [SerializeField] Text MeaningHolder;
     [SerializeField] VideoPlayer VideoHolder;
 
@@ -60,7 +60,7 @@ public class CreateTulis : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        SizeContent = Meaning.GetUpperBound(0);
+        SizeContent = Meaning.Length;
         IndexContent = 0;
 
         insertContent();
@@ -69,7 +69,7 @@ public class CreateTulis : MonoBehaviour
     public void insertContent()
     {
 
-        for (int i = 0; i <= GuratanHolder.GetUpperBound(0); i++)
+        /*for (int i = 0; i <= GuratanHolder.GetUpperBound(0); i++)
         {
             //Debug.Log(i);
             Color color = GuratanHolder[i].color;
@@ -83,7 +83,7 @@ public class CreateTulis : MonoBehaviour
             }
             GuratanHolder[i].color = color;
             GuratanHolder[i].sprite = guratan[IndexContent].gurat[i];
-        }       
+        }   */    
         MeaningHolder.text = Meaning[IndexContent];
 
         //sound
