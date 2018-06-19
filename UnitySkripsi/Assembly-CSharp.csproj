@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{28C0F2E6-B4E6-18AC-37F7-07FCE92993A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;Plane;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BalikHewanAirDarat.cs" />
+     <Compile Include="Assets\DengarDA.cs" />
+     <Compile Include="Assets\Scripts\AchievementManager.cs" />
+     <Compile Include="Assets\Scripts\BalikHewanAir.cs" />
+     <Compile Include="Assets\Scripts\BalikHewanDarat.cs" />
+     <Compile Include="Assets\Scripts\BalikKDHNew.cs" />
+     <Compile Include="Assets\Scripts\BalikKGHNew.cs" />
+     <Compile Include="Assets\Scripts\BalikKKHNew.cs" />
+     <Compile Include="Assets\Scripts\BalikProgBel.cs" />
+     <Compile Include="Assets\Scripts\BerhasilLoadLast.cs" />
+     <Compile Include="Assets\Scripts\CreateBelajar.cs" />
+     <Compile Include="Assets\Scripts\CreateScrollList.cs" />
+     <Compile Include="Assets\Scripts\CreateTulis.cs" />
+     <Compile Include="Assets\Scripts\DengarAir.cs" />
+     <Compile Include="Assets\Scripts\HatiAir.cs" />
+     <Compile Include="Assets\Scripts\KembaliHewan.cs" />
+     <Compile Include="Assets\Scripts\KembaliUtama.cs" />
+     <Compile Include="Assets\Scripts\Klikkeluar.cs" />
+     <Compile Include="Assets\Scripts\KuisDengar.cs" />
+     <Compile Include="Assets\Scripts\KuisDengarAir.cs" />
+     <Compile Include="Assets\Scripts\KuisGambar.cs" />
+     <Compile Include="Assets\Scripts\KuisGambarAir.cs" />
+     <Compile Include="Assets\Scripts\KuisKataAir.cs" />
+     <Compile Include="Assets\Scripts\LiveTampilan.cs" />
+     <Compile Include="Assets\Scripts\Pil1Air.cs" />
+     <Compile Include="Assets\Scripts\Pil2Air.cs" />
+     <Compile Include="Assets\Scripts\Pil3Air.cs" />
+     <Compile Include="Assets\Scripts\ProgressManager.cs" />
+     <Compile Include="Assets\Scripts\SampleButtonScript.cs" />
+     <Compile Include="Assets\Scripts\ScroolAir.cs" />
+     <Compile Include="Assets\Scripts\ShowAchievement.cs" />
+     <Compile Include="Assets\Scripts\StrokeVideo.cs" />
+     <Compile Include="Assets\Scripts\SwitchHalPembuka.cs" />
+     <Compile Include="Assets\Scripts\TulisAir.cs" />
+     <Compile Include="Assets\Scripts\buttonair.cs" />
+     <Compile Include="Assets\Scripts\coba.cs" />
+     <Compile Include="Assets\Scripts\coba1.cs" />
+     <Compile Include="Assets\Scripts\exit.cs" />
+     <Compile Include="Assets\Scripts\kembalikuis.cs" />
+     <Compile Include="Assets\Scripts\klikbutton.cs" />
+     <Compile Include="Assets\Scripts\kosakata.cs" />
+     <Compile Include="Assets\Scripts\pil1.cs" />
+     <Compile Include="Assets\Scripts\pil2.cs" />
+     <Compile Include="Assets\Scripts\pil3.cs" />
+     <Compile Include="Assets\ScrollDA.cs" />
+     <Compile Include="Assets\TulisDA.cs" />
+     <Compile Include="Assets\buttonairdarat.cs" />
+     <Compile Include="Assets\scriptcad\BalikKDAirBrp.cs" />
+     <Compile Include="Assets\scriptcad\BalikKDaratBrp.cs" />
+     <Compile Include="Assets\scriptcad\BalikKGAirBrp.cs" />
+     <Compile Include="Assets\scriptcad\BalikKGuratBrp.cs" />
+     <Compile Include="Assets\scriptcad\BalikKKAirBrp.cs" />
+     <Compile Include="Assets\scriptcad\BalikKKosBrp.cs" />
+     <Compile Include="Assets\scriptcad\balikkdenhew.cs" />
+     <Compile Include="Assets\scriptcad\balikkoshew.cs" />
+     <Compile Include="Assets\scriptcad\balikktulhew.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/halcarihewan.unity
+- path: Assets/prestasi.unity
   isLoaded: 1
   isActive: 1
