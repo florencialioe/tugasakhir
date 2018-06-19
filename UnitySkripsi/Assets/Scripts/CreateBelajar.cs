@@ -19,6 +19,10 @@ public class CreateBelajar : MonoBehaviour {
     [SerializeField] string[] Meaning;
     [SerializeField] AudioClip[] SoundAnimal;
 
+    [SerializeField] bool[] Lock;
+
+    private bool nextLock;
+
     int SizeContent;
     int IndexContent;
 
@@ -57,7 +61,7 @@ public class CreateBelajar : MonoBehaviour {
     }
     // Update is called once per frame
     void Update () {
-        if (IndexContent < SizeContent-1)
+        if (IndexContent < SizeContent-1 && nextLock == false)
         {
             NextButton.SetActive(true);
         }
@@ -83,7 +87,18 @@ public class CreateBelajar : MonoBehaviour {
     public void NextContent() {
         if (IndexContent < SizeContent) {
             IndexContent++;
-            insertContent();
+            //insertContent();
+            if (Lock[IndexContent] == false)
+            {
+                insertContent();
+                nextLock = false;
+            }
+            else
+            {
+                IndexContent--;
+                nextLock = true;
+
+            }
         }
         
     }
@@ -94,6 +109,7 @@ public class CreateBelajar : MonoBehaviour {
         {
             IndexContent--;
             insertContent();
+            nextLock = false;
         }
        
 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/prestasi.unity
+- path: Assets/tulisda.unity
   isLoaded: 1
   isActive: 1

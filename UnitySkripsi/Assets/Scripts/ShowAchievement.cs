@@ -31,9 +31,9 @@ public class ShowAchievement : MonoBehaviour
     void giveText()
     {
         int[] value = AchievementManager.ToGetHowManyAchivement();
-        MendengarShow.text = "Current Quiz : " + value[0].ToString();
-        GuratanShow.text= "Current Quiz : " + value[1].ToString();
-        KosakataShow.text= "Current Quiz : " + value[2].ToString();
+        MendengarShow.text = "Kuis saat ini : " + value[0].ToString();
+        GuratanShow.text= "Kuis saat ini: " + value[1].ToString();
+        KosakataShow.text= "Kuis saat ini : " + value[2].ToString();
     }
 
     void summonAchivment()

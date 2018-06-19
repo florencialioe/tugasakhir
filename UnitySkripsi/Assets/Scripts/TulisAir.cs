@@ -42,6 +42,9 @@ public class TulisAir : MonoBehaviour
     [SerializeField] string[] Meaning;
     //[SerializeField] guratanP[] guratan;
     [SerializeField] VideoClip[] video;
+    [SerializeField] bool[] Lock;
+
+    private bool nextLock;
 
     int SizeContent;
     int IndexContent;
@@ -61,7 +64,8 @@ public class TulisAir : MonoBehaviour
     void Start()
     {
         SizeContent = Meaning.Length;
-        IndexContent = 0;
+        IndexContent = ScroolAir.IndexButtona;
+        ScroolAir.IndexButtona = 0;
 
         insertContent();
     }
@@ -91,11 +95,13 @@ public class TulisAir : MonoBehaviour
         VideoHolder.clip = video[IndexContent];
         PauseButton.SetActive(true);
         VideoHolder.Play();
+
+        ScroolAir.IndexButtona = IndexContent;
     }
     // Update is called once per frame
     void Update()
     {
-        if (IndexContent < SizeContent - 1)
+        if (IndexContent < SizeContent - 1 && nextLock == false)
         {
             NextButton.SetActive(true);
         }
@@ -136,7 +142,17 @@ public class TulisAir : MonoBehaviour
         if (IndexContent < SizeContent)
         {
             IndexContent++;
-            insertContent();
+            if (Lock[IndexContent] == false)
+            {
+                insertContent();
+                nextLock = false;
+            }
+            else
+            {
+                IndexContent--;
+                nextLock = true;
+
+            }
         }
     }
 
@@ -146,6 +162,7 @@ public class TulisAir : MonoBehaviour
         {
             IndexContent--;
             insertContent();
+            nextLock = false;
         }
     }
 }

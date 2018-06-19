@@ -55,6 +55,8 @@ public class DengarAir : MonoBehaviour
         AudioHolder.Stop();
         AudioHolder.clip = SoundAnimal[IndexContent];
         AudioHolder.Play();
+
+        ScroolAir.IndexButtona = IndexContent;
     }
     // Update is called once per frame
     void Update()
