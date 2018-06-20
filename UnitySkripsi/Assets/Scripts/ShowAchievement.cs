@@ -14,7 +14,7 @@ public class ShowAchievement : MonoBehaviour
     // Use this for initialization
 	void Start ()
 	{
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         //textAchievement = GetComponent<Text>();
         textAchievement.text = AchievementManager.CreateConfig();
 	    //int[] pararel = AchievementManager.ToGetAchivement();

@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 81
+  controlID: 98
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 82
+  controlID: 99
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 33
+  controlID: 100
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,9 +365,9 @@ MonoBehaviour:
     height: 336
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ceab0000
-    m_LastClickedID: 43982
-    m_ExpandedIDs: 045bfeff7a5efeff525ffeff8e62feffd865feff2e67feff886afeffc674feff387ffeff5083feff44bbfeff38c0feffb40effff9c15ffff9c1affffb620ffffd027ffff0864ffffc06affffeca5ffffbca7ffff06d3ffffe8dcffffc0faffffe0fbffff0000000022290000202a000092320000b6350000845800002e720000d0720000f6740000ae8e00005e9e0000689e00009a9e00008a9f000002a200004aa30000eca30000d8a60000c0a80000b0ab0000
+    m_SelectedIDs: 58060000
+    m_LastClickedID: 0
+    m_ExpandedIDs: b6f2ffffaaf3ffff7ef4ffff84f4ffff8af4ffff92f4ffff98f4ffffa0f4ffffa4f4ffffa8f4ffffb0f4ffffb6f4ffffbcf4ffffccf4ffffd6f4ffffe0f4fffff2f4fffff6f4fffffcf4ffff0af5ffff18f5ffff2ef5ffff32f5ffff36f5ffff42f5ffff46f5ffff4cf5ffff52f5ffff56f5ffff5cf5ffff64f5ffff6af5ffffdcf7ffffd0f8ffffa4f9ffffaaf9ffffb0f9ffffb8f9ffffbef9ffffc6f9ffffcaf9ffffcef9ffffd6f9ffffdcf9ffffe2f9fffff2f9fffffcf9ffff06faffff18faffff1cfaffff22faffff30faffff3efaffff54faffff58faffff5cfaffff68faffff6cfaffff72faffff78faffff7cfaffff82faffff8afaffff90faffffe0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -527,19 +527,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\tugasakhir\UnitySkripsi
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 28250000
-    m_LastClickedID: 9512
-    m_ExpandedIDs: 0000000028250000122a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 212}
+    m_SelectedIDs: ae260000
+    m_LastClickedID: 9902
+    m_ExpandedIDs: 000000002a250000b62a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000028250000122a0000
+    m_ExpandedIDs: 000000002a250000b62a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000cf4fdff000000008c250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -619,7 +619,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 183.0004}
+    m_ScrollPosition: {x: 0, y: 266}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 115
 --- !u!114 &17
@@ -674,7 +674,7 @@ MonoBehaviour:
     y: 92
     width: 396
     height: 614
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 136.95203}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
